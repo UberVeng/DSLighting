@@ -1,0 +1,397 @@
+/* html tag override */
+email::after{
+    content: attr(data-domain);
+}
+
+email::before{
+    content: attr(data-user) "\0040";
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 200 !important;
+}
+h3{   
+    font-family: 'Oswald', sans-serif;
+    font-weight: 200 !important;
+    line-height: 1.7 !important;
+    letter-spacing: 1px; 
+}
+h4{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 200 !important;
+    line-height: 1.5 !important;
+    letter-spacing: 1px;
+}
+h5{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 200 !important;
+    font-size: 1.3rem !important;
+    margin-bottom: .75rem !important;
+}
+h6{
+    font-weight: 200 !important;
+}
+a{
+   text-decoration: none !important;
+}
+a:hover{    
+    text-decoration: none !important;
+ }
+ p{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 200;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    line-height: 2;
+    margin-bottom: 0 !important;
+ }
+ tbody{
+     display: table;
+     width: 100%;
+ }
+ td{
+     padding: 10px;
+     text-align: center;
+     border: solid black 1px;
+ }
+ figcaption{
+     padding: 10px;
+     text-align: center;
+ }
+
+ /* bootstrap 4 override */
+.row{
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+}
+.navbar, .oswald{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 200;
+    font-size: 1.2rem !important;
+}
+.dropdown-menu{
+    position: absolute !important;
+}
+.dropdown-toggle::after{
+    display: none !important;
+}
+.navbar-collapse{
+    flex-grow: 0 !important;
+}
+.nav-item{    
+    white-space: nowrap;
+}
+.navbar-nav{
+    width: 100%;
+}
+.dropdown-item{
+    font-weight: 300 !important;
+}
+.navbar-brand{
+    margin-right: auto;
+    background-image: url(/img/logo.png);
+    width: 200px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.active{
+    font-weight: 300;
+}
+.dropdown-item:active{
+    background-color: #f60 !important;
+}
+.dropdown-item.active, .dropdown-item:active{
+    background-color: rgb(194, 197, 204) !important;
+    cursor: default;
+}
+.card{
+   font-family: 'Oswald', sans-serif;
+   border: none !important;
+   text-align: center;
+   color: rgba(0,0,0,.5) !important;
+   transition: ease-in-out;
+   transition-duration: .2s;
+}
+.card:hover{    
+   color: rgb(68, 68, 68) !important;
+   transition: ease-in-out;
+   transition-duration: .2s;
+}
+.card:hover .price-separator{    
+   background-color: rgb(68, 68, 68);
+   transition: ease-in-out;
+   transition-duration: .2s;
+}
+.btn{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 200;
+}
+.btn-primary {
+    color: rgba(0, 0, 0, 0.6) !important;
+    background-color: #ffffff !important;
+    border-color: rgba(0, 0, 0, 0.6) !important;
+    border-radius: .15rem !important;
+}
+.btn-primary:focus{
+    background-color: #bdc9df !important;
+    color: rgb(255, 255, 255) !important;
+    box-shadow: 0px 0px 5px 1px #6495ff54 !important;
+}
+.btn-primary:active{
+    background-color: #ff954f !important;
+    color: rgb(255, 255, 255) !important;
+    box-shadow: 0px 0px 5px 1px #ff000085 !important;
+}
+.btn-primary:hover{
+    background-color: #ff954f !important;
+    color: rgb(255, 255, 255) !important;
+    border-color: #f8751e !important;
+}
+
+/* Custom classes */
+.indent{
+    text-indent: 1rem;
+}
+.w-max-content{    
+    width: -moz-max-content;
+    width: -webkit-max-content;
+    width: -o-max-content;
+    width: -ms-max-content;
+}
+.h-max-content{    
+    height: -moz-max-content;
+    height: -webkit-max-content;
+    height: -o-max-content;
+    height: -ms-max-content;
+}
+.bg-index{
+    background-image: url(/img/1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.bg-about{
+    background-image: url(/img/about.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.bg-thank-you{
+    background-image: url(/img/thank-you.png);
+    background-size: cover;
+    background-position: center;
+
+}
+.card-img{
+    object-fit: cover;
+}
+.price{
+    font-size: 1rem;
+    line-height: 1.5rem !important;
+    margin-top: .75rem !important;
+}
+.separator-90{
+    height: 1px;
+    width: 90%;
+    background-color: #bebebe;
+    margin: auto;
+}
+.separator-100{
+    height: 1px;
+    width: 100%;
+    background-color: #bebebe;
+    max-width: 434px;
+
+}
+.price-separator{
+    height: 1px;
+    width: 20px;
+    background-color: rgba(0,0,0,.4);
+    margin: auto;
+    transition: ease-in-out;
+    transition-duration: .2s;
+}
+.index-pic{
+    height: 384px;
+    width: 100%;
+    object-position: center;
+    object-fit: cover;
+}
+.main-phone{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 200;
+    font-size: 1.1rem;
+    height: max-content;
+    padding-right: 15px;
+    padding-left: 15px;
+    text-align: right;
+    color: white;
+    z-index: 1;
+}
+.main-info{
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 200;
+    font-size: 1.2rem;
+    line-height: 1.3em;
+    width: fit-content;
+    height: max-content;
+    margin-top: -28px;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 1;
+}
+.block-title{
+    text-align: center;
+    color: rgb(51, 51, 51);
+    word-spacing: .1em;
+    letter-spacing: .1em;
+}
+.contact-box{
+    margin-left:auto;
+}
+.contact-inner-box{
+    width: max-content;
+}
+.contact-info{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 200;
+    font-size: 1.2rem !important;
+    text-align: center;
+    color: rgb(58, 58, 58) !important;
+}
+.product-img{
+    margin: 0;
+    border: rgba(0, 0, 0, 0.2) solid 1px;
+    padding: 1rem;
+}
+.product-img-50{
+    width: 50px;
+    height: 50px;
+    margin: 0;
+    border: rgba(0, 0, 0, 0.2) solid 1px !important;
+    padding: 1rem;
+    border-radius: 2px !important;
+    box-shadow: none;
+}
+.active.product-img-50{
+    box-shadow: 0px 0px 1px 1px #ff7757;
+}
+.showcase-small{
+    margin-left: 5px;
+}
+.product-title{
+    max-width: 434px;
+}
+.product-description{
+    max-width: 434px !important;
+}
+.nav-disabled{
+    color: gray;
+}
+.nav-enabled{
+    color: black;
+}
+.nav-enabled:hover {
+    color: rgba(0,0,0,.7) !important;
+}
+.table-text{
+    margin: 0;
+    font-weight: 300;
+    line-height: 1.2;
+}
+.hidden-text{
+    color: #f0f8ff00;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    user-select: none;
+}
+.default-font{
+    font-family: -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    "Helvetica Neue",
+    Arial,"Noto Sans",
+    sans-serif,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    "Noto Color Emoji";
+}
+
+.col-1-of-5{
+    -ms-flex: 0 0 20%;
+    flex: 0 0 20%;
+}
+.col-1-of-9{
+    -ms-flex: 0 0 11.111111%;
+    flex: 0 0 11.111111%;
+}
+.transition-fade{
+    opacity: 1;
+    transition: 500ms;
+    transform: translateX(0);
+    transform-origin: left;
+    
+  }
+  
+  html.is-animating .transition-fade {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  html.is-leaving .transition-fade{
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  
+
+@media (min-width: 576px){ /* -sm- */
+    .main-info{
+        font-size: 1.3rem;
+    }   
+    .main-phone{
+        font-size: 1.2rem;
+    }
+    .contact-info{
+        text-align: left;
+    }
+    .product-title{
+        max-width: none;
+    }
+    .showcase-small{
+        margin-left: 15px;
+    }
+}
+@media (min-width: 768px){ /* -md- */
+    .main-info{
+        font-size: 1.5rem;
+    }
+    .main-phone{
+        font-size: 1.3rem;
+    }
+    .col-1-of-5{
+        -ms-flex: 0 0 20% !important;
+        flex: 0 0 20% !important;
+    }
+    .col-1-of-9{
+        -ms-flex: 0 0 11.111111% !important;
+        flex: 0 0 11.111111% !important;
+    }
+    
+}
+@media (min-width: 992px){ /* -lg- */
+
+}
+@media (min-width: 1200px){ /* -xl- */
+    .main-phone{
+        padding-right: 20vw !important;
+    }
+}
